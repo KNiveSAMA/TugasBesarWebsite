@@ -21,12 +21,12 @@
 </nav>
 
 <div id="sideMenu" class="side-menu">
-    <a href="umum.html">Dashboard</a>
-    <a href="index.html">Pesan Tiket</a>
-    <a href="profile.html">Profile</a>
-    <a href="exchange.html">Exchange</a>
-    <a href="about.html">About</a>
-    <a id="konfirmasi-link" href="konfirmasi.html" style="display:none;">Konfirmasi</a>
+    <a href="umum.php">Dashboard</a>
+    <a href="index.php">Pesan Tiket</a>
+    <a href="profile.php">Profile</a>
+    <a href="exchange.php">Exchange</a>
+    <a href="about.php">About</a>
+    <a id="konfirmasi-link" href="konfirmasi.php" style="display:none;">Konfirmasi</a>
 </div>
 
 <div id="overlay"></div>

@@ -19,7 +19,7 @@ include "../layout/navbar.php";
             Total Poin Anda:
             <strong>
                 <span id="user-poin">
-                    <?= $_SESSION['poin'] ?>
+                    <?= $_SESSION['poin'] ?>    
                 </span> poin
             </strong>
         </p>
@@ -82,7 +82,7 @@ include "../layout/navbar.php";
 
     <article class="article2">
         <h1 style="text-align:center">Gambar Rute</h1>
-        <img src="/assets/img/rute.png" style="width:100%;">
+        <img src="../assets/img/rute.png" style="width:100%;">
     </article>
 
 </div>

@@ -1,0 +1,142 @@
+/* ================= GLOBAL ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1b1642, #090721);
+  color: #fff;
+}
+
+/* ================= HEADER ================= */
+header {
+  padding: 12px 20px;
+  font-size: 18px;
+}
+
+/* ================= NAV ================= */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  border-bottom: 2px solid #00e5ff;
+}
+
+.hamburger span {
+  background: #fff;
+}
+
+/* ================= LAYOUT ================= */
+.grid-layout {
+  max-width: 1200px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 35px;
+}
+
+/* ================= ARTICLE 1 ================= */
+.article1 {
+  background: linear-gradient(135deg, #2a1638, #3b1f3a);
+  border: 3px solid #ff7a00;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 0 35px rgba(255, 122, 0, 0.25);
+}
+
+.article1 h2 {
+  color: #ffc400;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.article1 p {
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+/* ================= CARD DISKON ================= */
+.card-diskon {
+  background: linear-gradient(135deg, #441b32, #5a1f3a);
+  border: 2px solid #ff2f92;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 47, 146, 0.25);
+  transition: 0.3s ease;
+}
+
+.card-diskon:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(255, 47, 146, 0.45);
+}
+
+.card-diskon h3 {
+  color: #ffc400;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card-diskon p {
+  margin-bottom: 18px;
+  font-size: 15px;
+}
+
+/* ================= BUTTON ================= */
+.card-diskon button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(90deg, #ff006e, #ffb703);
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(255, 183, 3, 0.4);
+  transition: 0.3s;
+}
+
+.card-diskon button:hover:not(:disabled) {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 183, 3, 0.7);
+}
+
+.card-diskon button:disabled {
+  background: #555;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+/* ================= ARTICLE 2 ================= */
+.article2 {
+  background: linear-gradient(135deg, #0d2342, #2a1f52);
+  border: 3px solid #00e5ff;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 0 35px rgba(0, 229, 255, 0.25);
+}
+
+.article2 h1 {
+  color: #ffc400;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.article2 p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  margin-top: 60px;
+  padding: 20px;
+  text-align: center;
+  color: #ccc;
+}
