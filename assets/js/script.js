@@ -3,17 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const sideMenu = document.getElementById("sideMenu");
   const overlay = document.getElementById("overlay");
 
-  function toggleMenu() {
+  hamburgerBtn.addEventListener("click", () => {
     sideMenu.classList.toggle("active");
     overlay.classList.toggle("active");
-  }
-
-  hamburgerBtn.addEventListener("click", (e) => {
-    e.stopPropagation();
-    toggleMenu();
   });
 
   overlay.addEventListener("click", () => {
-    toggleMenu();
+    sideMenu.classList.remove("active");
+    overlay.classList.remove("active");
   });
 });

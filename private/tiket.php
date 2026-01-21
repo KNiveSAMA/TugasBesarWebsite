@@ -1,38 +1,55 @@
 <?php
 require_once "../config/auth_check.php";
+
+$title  = "Pesan Tiket";
+$header = "Pemesanan Tiket";
+
+include "../layout/header.php";
+include "../layout/navbar.php";
 ?>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <title>Pesan Tiket</title>
-</head>
-<body>
 
-<h2>Pesan Tiket Kereta</h2>
+<link rel="stylesheet" href="../assets/css/tiket.css">
 
-<form method="POST" action="../process/tiket_add.php">
+<div class="grid-layout">
 
-    <label>Rute</label>
-    <input type="text" name="rute" required><br><br>
+    <article class="article1">
 
-    <label>Waktu</label>
-    <input type="text" name="waktu" required><br><br>
+        <h2>Pesan Tiket Kereta</h2>
 
-    <label>Stasiun Naik</label>
-    <input type="text" name="naik" required><br><br>
+        <form method="POST" action="../process/tiket_add.php" class="tiket-form">
 
-    <label>Stasiun Turun</label>
-    <input type="text" name="turun" required><br><br>
+            <div class="form-group">
+                <label>Rute</label>
+                <input type="text" name="rute" required>
+            </div>
 
-    <label>Harga</label>
-    <input type="number" name="harga" required><br><br>
+            <div class="form-group">
+                <label>Waktu</label>
+                <input type="text" name="waktu" required>
+            </div>
 
-    <button type="submit">Pesan</button>
+            <div class="form-group">
+                <label>Stasiun Naik</label>
+                <input type="text" name="naik" required>
+            </div>
 
-</form>
+            <div class="form-group">
+                <label>Stasiun Turun</label>
+                <input type="text" name="turun" required>
+            </div>
 
-<br>
-<a href="dashboard.php">⬅ Kembali</a>
+            <div class="form-group">
+                <label>Harga</label>
+                <input type="number" name="harga" required>
+            </div>
 
-</body>
-</html>
+            <button type="submit">Pesan Tiket</button>
+
+        </form>
+
+    </article>
+
+</div>
+
+<?php include "../layout/footer.php"; ?>
+<script src="../assets/js/script.js"></script>

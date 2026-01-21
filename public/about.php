@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <title></title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/css/about.css">
 </head>
 <body>
 
@@ -28,12 +27,12 @@
 </nav>
 
 <div id="sideMenu" class="side-menu">
-    <a href="umum.html">Home</a>
-	<a href="index.html">Pesan Tiket</a>
-    <a href="profile.html">Profile</a>
-    <a href="exchange.html">Exchange</a>
-    <a href="about.html">About</a>
-    <a id="konfirmasi-link" href="konfirmasi.html" style="display:none;">Konfirmasi</a>
+    <a href="../private/dashboard.php">Home</a>
+	<a href="../private/tiket.php">Pesan Tiket</a>
+    <a href="../private/profile.php">Profile</a>
+    <a href="../private/exchange.php">Exchange</a>
+    <a href="about.php">About</a>
+    <a id="konfirmasi-link" href="konfirmasi.php" style="display:none;">Konfirmasi</a>
 </div>
 
 <div id="overlay"></div>
@@ -89,7 +88,7 @@
     <a href="references.html">References</a>-->
 </footer>
 
-<script src="script.js"></script>
+<script src="../assets/js/script.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
     const pesanan = JSON.parse(localStorage.getItem("pesanan"));

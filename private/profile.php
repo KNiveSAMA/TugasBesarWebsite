@@ -23,7 +23,7 @@
 <div id="overlay"></div>
 
 <div id="sideMenu">
-  <p><a href="umum.php">Home</a></p>
+  <p><a href="dashboard.php">Home</a></p>
   <p><a href="tiket.php">Pesan Tiket</a></p>
   <p><a href="profile.php" class="active">Profile</a></p>
   <p><a href="exchange.php">Exchange</a></p>

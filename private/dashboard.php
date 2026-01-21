@@ -8,6 +8,8 @@ include "../layout/header.php";
 include "../layout/navbar.php";
 ?>
 
+<link rel="stylesheet" href="../assets/css/dashboard.css">
+
 <div class="grid-layout">
 
     <article class="article1">
@@ -48,7 +50,7 @@ include "../layout/navbar.php";
             </div>
 
             <div class="card-diskon"
-                 onclick="location.href='tiket_add.php'"
+                 onclick="location.href='tiket.php'"
                  style="cursor:pointer;">
                 <h3>Pemesanan Tiket</h3>
                 <p>Pesan tiket kereta</p>
