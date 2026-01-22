@@ -2,6 +2,9 @@
 require_once "../config/auth_check.php";
 require_once "../config/database.php";
 
+$title  = "Penukaran Poin";
+$header = "Exchange Poin";
+
 $user_poin = $_SESSION['poin'];
 $data = mysqli_query($conn, "SELECT * FROM discounts");
 ?>

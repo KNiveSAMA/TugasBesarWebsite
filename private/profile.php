@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Profile Pengguna</title>
-  <link rel="stylesheet" href="../assets/css/profile.css" />
+  <link rel="stylesheet" href="../assets/css/profile.css"/>
 </head>
 
 <body>
@@ -35,27 +35,32 @@
   </p>
 </div>
 
-<section>
-  <table cellpadding="15">
-    <tr>
-      <td align="center">
-        <img src="profile.jpg" width="140" height="140" style="border-radius:50%" />
-        <br />
-        <button onclick="gantiFoto()">Ganti Foto</button>
-      </td>
-      <td>
-        <h2>Data Pengguna</h2>
-        <table cellpadding="6">
-          <tr><td><b>Nama</b></td><td>:</td><td id="p-nama">-</td></tr>
-          <tr><td><b>Nomor</b></td><td>:</td><td id="p-telp">-</td></tr>
-          <tr><td><b>Email</b></td><td>:</td><td id="p-email">-</td></tr>
-          <tr><td><b>ID</b></td><td>:</td><td id="p-id">-</td></tr>
-        </table>
-        <button onclick="editProfile()">Edit Profil</button>
-      </td>
-    </tr>
-  </table>
+<section class="profile-wrapper">
+
+  <div class="profile-card">
+
+    <div class="profile-left">
+      <img src="profile.jpg" class="profile-img" />
+      <button class="btn btn-photo" onclick="gantiFoto()">Ganti Foto</button>
+    </div>
+
+    <div class="profile-right">
+      <h2>Data Pengguna</h2>
+
+      <div class="profile-info">
+        <p><span>Nama</span> : <b id="p-nama">-</b></p>
+        <p><span>Nomor</span> : <b id="p-telp">-</b></p>
+        <p><span>Email</span> : <b id="p-email">-</b></p>
+        <p><span>ID</span> : <b id="p-id">-</b></p>
+      </div>
+
+      <button class="btn btn-edit" onclick="editProfile()">Edit Profil</button>
+    </div>
+
+  </div>
+
 </section>
+
 
 <footer>
   About • Help • Services • References

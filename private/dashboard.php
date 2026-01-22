@@ -90,3 +90,6 @@ include "../layout/navbar.php";
 </div>
 
 <?php include "../layout/footer.php"; ?>
+
+<script src="../assets/js/script.js"></script>
+
